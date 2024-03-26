@@ -83,8 +83,8 @@ onMounted(() => {
       <span class="drawer-handler__icon">
         <up-outlined />
       </span>
-      <span class="drawer-handler__text slide-up">Slide Up</span>
-      <span class="drawer-handler__text wheel-up">Wheel Up</span>
+      <span class="drawer-handler__text slide-up">首页</span>
+      <span class="drawer-handler__text wheel-up">首页</span>
     </div>
     <!-- Drawer -->
     <Drawer
@@ -135,6 +135,27 @@ onMounted(() => {
       font-size: var(--regular-font-size);
       margin-top: var(--mini-gap);
       animation: float 4s infinite ease-in-out;
+      font-weight: bold;
+      font-family: 'Arial Black', sans-serif;
+      padding: 0.5rem 1rem;
+      background-color: #f093fb;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #f5576c;
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #f5576c;
+      }
 
       &.slide-up {
         @media (any-hover: hover) {

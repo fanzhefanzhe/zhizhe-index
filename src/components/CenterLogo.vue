@@ -77,6 +77,7 @@ onMounted(() => {
       <div :class="['hello', { hello_bottom: touchable }]">
         <div>{{ slogan }}</div>
         <div class="hello_bottom_text">点击以访问 {{ $config.BLOG_NAME }}</div>
+<!--        <div class="hello_bottom_text">aaaaaaaaa</div>-->
       </div>
     </div>
   </div>
@@ -124,26 +125,70 @@ onMounted(() => {
     .main-logo-top {
       top: -3.2rem;
     }
+    //.hello {
+    //  color: #ffffff;
+    //  width: 18.75rem;
+    //  text-align: center;
+    //  position: absolute;
+    //  transform: translate(-50%, -50%);
+    //  font-size: 1.5rem;
+    //  opacity: 0;
+    //  top: 100px;
+    //  transition: all 1s;
+    //}
+    //.hello_bottom {
+    //  opacity: 1;
+    //  top: 3.5rem;
+    //  .hello_bottom_text {
+    //    font-size: var(--regular-font-size);
+    //    margin-top: 0.5rem;
+    //    padding: 0.5rem;
+    //    border-top: 1px solid #fff;
+    //    background-color: #ffdd57; /* 使用明亮的背景颜色 */
+    //    color: #333333; /* 使用深色文本颜色 */
+    //    cursor: pointer;
+    //  }
+    //}
     .hello {
       color: #ffffff;
       width: 18.75rem;
       text-align: center;
       position: absolute;
-      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 100px;
+      transform: translateX(-50%);
       font-size: 1.5rem;
       opacity: 0;
-      top: 100px;
       transition: all 1s;
     }
+
     .hello_bottom {
       opacity: 1;
       top: 3.5rem;
-      .hello_bottom_text {
-        font-size: var(--regular-font-size);
-        margin-top: 0.5rem;
-        padding-top: 0.5rem;
-        border-top: 1px solid #fff;
-      }
+    }
+
+    .hello_bottom_text {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      padding: 1rem;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #f093fb, #f5576c); /* 使用渐变色作为背景 */
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      border: none; /* 移除边框 */
+    }
+
+    .hello_bottom_text:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .hello_bottom_text:active {
+      transform: translateY(2px);
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
     }
   }
 }

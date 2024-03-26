@@ -25,7 +25,7 @@ defineProps<{
       <img
         v-if="item.icon"
         class="site-logo"
-        :src="item.icon"
+        src="../../tmp/icon.svg"
         :alt="item.title"
       />
       <span v-else class="site-default-logo">{{ item.title.slice(0, 1) }}</span>
@@ -43,9 +43,7 @@ $text-line-height: 1.4rem;
   overflow: hidden;
   display: flex;
   align-items: center;
-  min-height: calc(
-    $text-line-height + var(--super-mini-gap) + $text-line-height * 2
-  );
+  min-height: calc($text-line-height + var(--super-mini-gap) + $text-line-height * 2);
   cursor: pointer;
   transition: all 0.2s ease;
   border: 1px solid #ffffff;
@@ -58,7 +56,7 @@ $text-line-height: 1.4rem;
 
   &:active {
     border: 1px solid var(--secondary-text-color);
-    box-shadow: inset 0px 0px 0.3rem 0px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 0.3rem 0 rgba(0, 0, 0, 0.3);
     transform: scale(0.99);
   }
 
@@ -66,18 +64,20 @@ $text-line-height: 1.4rem;
     flex: 1;
     overflow: hidden;
     margin-right: 0.4rem;
+
     .title {
       margin-bottom: var(--super-mini-gap);
-      // 文本最多一行
+      /* 文本最多一行 */
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       line-height: $text-line-height;
     }
+
     .description {
       font-size: var(--small-font-size);
       color: var(--secondary-text-color);
-      // 文本最多两行
+      /* 文本最多两行 */
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
@@ -93,12 +93,14 @@ $text-line-height: 1.4rem;
     height: 3.5rem;
     border-radius: 100%;
     position: relative;
+
     .site-logo {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 100%;
     }
+
     .site-default-logo {
       font-size: 2rem;
       color: #ffffff;

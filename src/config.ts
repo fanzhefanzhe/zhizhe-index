@@ -1,40 +1,45 @@
 const WEBSITE_SORTS: WebsiteSort[] = [
-  { id: 1, title: "示例分类1" },
-  { id: 2, title: "示例分类2" },
-  { id: 3, title: "示例分类3" },
-  { id: 4, title: "示例分类4" },
-  { id: 5, title: "示例分类5" },
-  { id: 6, title: "友情链接" },
+  { id: 1, title: "智哲AI" },
+  // { id: 2, title: "示例分类2" },
+  // { id: 3, title: "示例分类3" },
+  // { id: 4, title: "示例分类4" },
+  // { id: 5, title: "示例分类5" },
+  // { id: 6, title: "友情链接" },
 ];
 
 const WEBSITE_ITEMS: WebsiteItem[] = [
   {
     sortId: 1,
-    title: "主标题",
-    url: "http://www.your-web-page.com/",
-    icon: "",
-    color: "#0171CD",
+    title: "导航首页",
+    url: "https://home.fzzsy.fun",
+      description: "收藏不迷路",
+      icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
+      color: "#0171CD",
   },
   {
     sortId: 1,
-    title: "主标题",
-    description: "网站描述",
-    url: "http://www.your-web-page.com/",
-    icon: "",
+    title: "智哲AI",
+    description: "旧地址已废弃",
+    url: "https://zhizhe.fzzsy.fun/zh",
+      icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
+      color: "#cdca01",
   },
   {
     sortId: 1,
-    title: "主标题",
-    description: "网站描述",
-    url: "http://www.your-web-page.com/",
-    icon: "",
+    title: "智哲AI-备用地址",
+    description: "建议收藏首页",
+    url: "https://zhizhe.v6.rocks/zh",
+      icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
+      color: "#52cb49",
   },
   {
-    sortId: 6,
-    title: "EsunR Blog",
-    description: "EsunR 的博客",
-    url: "https://www.esunr.xyz",
-    icon: "https://esunr-image-bed.oss-cn-beijing.aliyuncs.com/logo.jpg",
+    sortId: 1,
+    title: "Libertad's Blog",
+    description: "Libertad 的博客",
+    url: "https://file.conbig.cn/",
+    // icon: "https://esunr-image-bed.oss-cn-beijing.aliyuncs.com/logo.jpg",
+      icon: "../../tmp/logo.jpg",
+      color: "#ad902d",
   },
 ];
 
@@ -42,11 +47,11 @@ const GLOBAL_CONFIG = {
   /**
    * 博客名称
    */
-  BLOG_NAME: "EsunR-Blog",
+  BLOG_NAME: "智哲AI",
   /**
    * 个人博客链接
    */
-  BLOG_URL: "https://blog.esunr.xyz",
+  BLOG_URL: "https://zhizhe.fzzsy.fun/zh",
   /**
    * 指定中心 LOGO 图片地址
    */
@@ -62,8 +67,11 @@ const GLOBAL_CONFIG = {
   /**
    * ICP 备案号，留空不显示
    */
-  ICP: "京ICP证000001号",
-  ICP_URL: "https://beian.miit.gov.cn/",
+  // ICP: "京ICP证000001号",
+  // ICP_URL: "https://beian.miit.gov.cn/",
+  // FOOTER_INFO: true,
+  ICP: "因智哲AI原域名(chat.fzgo.me)于3.26到期,故搭建首页导航!请大家及时收藏",
+  ICP_URL: "https://home.fzzsy.fun",
   FOOTER_INFO: true,
   /**
    * 网站欢迎标语
@@ -91,7 +99,7 @@ const GLOBAL_CONFIG = {
    * 网站 Title Keywords Description 的配置，用于 SEO
    */
   TKD: {
-    title: "My Blog Index",
+    title: "智哲首页",
     keywords: "Blog, Index, Index Page",
     description: "This is my personal blog index page.",
   },
