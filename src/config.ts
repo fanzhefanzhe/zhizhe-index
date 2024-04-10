@@ -11,16 +11,24 @@ const WEBSITE_ITEMS: WebsiteItem[] = [
   {
     sortId: 1,
     title: "导航首页",
-    url: "https://home.fzzsy.fun",
-    description: "收藏不迷路",
+    url: "https://home.zhizhe.fun",
+    description: "收藏不迷路-有效期至2027",
     icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
     color: "#0171CD",
   },
   {
     sortId: 1,
     title: "智哲AI",
-    description: "正在修复服务器ing",
-    url: "https://zhizhe.fzzsy.fun/zh",
+    description: "域名有效期至2027",
+    url: "https://chat.zhizhe.fun/zh",
+    icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
+    color: "#cdca01",
+  },
+  {
+    sortId: 1,
+    title: "智哲AI-04-27",
+    description: "域名有效期至04-27,请关注https://home.zhizhe.fun",
+    url: "https://chat.zhizhe.fun/zh",
     icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
     color: "#cdca01",
   },
@@ -28,7 +36,7 @@ const WEBSITE_ITEMS: WebsiteItem[] = [
     sortId: 1,
     title: "智哲AI-备用地址",
     description: "建议收藏首页",
-    url: "https://zhizhe.v6.rocks/zh",
+    url: "http://zhizhe.v6.rocks/zh",
     icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
     color: "#52cb49",
   },
@@ -51,7 +59,7 @@ const GLOBAL_CONFIG = {
   /**
    * 个人博客链接
    */
-  BLOG_URL: "https://zhizhe.fzzsy.fun/zh",
+  BLOG_URL: "https://chat.zhizhe.fun/zh",
   /**
    * 指定中心 LOGO 图片地址
    */
@@ -71,7 +79,7 @@ const GLOBAL_CONFIG = {
   // ICP_URL: "https://beian.miit.gov.cn/",
   // FOOTER_INFO: true,
   ICP: "因智哲AI原域名(chat.fzgo.me)于3.26到期,故搭建首页导航!请大家及时收藏",
-  ICP_URL: "https://home.fzzsy.fun",
+  ICP_URL: "https://home.zhizhe.fun",
   FOOTER_INFO: true,
   /**
    * 网站欢迎标语
