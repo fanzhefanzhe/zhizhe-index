@@ -6,7 +6,7 @@ Blog-Index 通用网站导航
 ![](https://img.shields.io/badge/Build-Vite-orange.svg)
 ![](https://img.shields.io/badge/Installer-Yarn-blue.svg)
 
-[预览链接](https://blog-index.esunr.xyz) | [友链交换区](https://github.com/EsunR/Blog-Index/issues/53) | [更新日志](./CHANGELOG.md)
+[预览链接](https://blog-index.esunr.xyz) | [友链交换区](https://github.com/fanzhefanzhe/Blog-Index/issues/53) | [更新日志](./CHANGELOG.md)
 
 ![](./demo/show.png)
 
@@ -50,7 +50,7 @@ Blog-Index 通用网站导航
 拉取代码并安装依赖：
 
 ```sh
-git clone https://github.com/EsunR/Blog-Index.git
+git clone https://github.com/fanzhefanzhe/Blog-Index.git
 cd ./Blog-Index
 yarn install
 ```
@@ -77,7 +77,7 @@ yarn build
 拉取代码并安装依赖：
 
 ```sh
-git clone https://github.com/EsunR/Blog-Index.git
+git clone https://github.com/fanzhefanzhe/Blog-Index.git
 cd ./Blog-Index
 yarn install
 ```

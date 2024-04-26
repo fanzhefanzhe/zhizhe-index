@@ -67,7 +67,7 @@ const GLOBAL_CONFIG = {
   /**
    * 个人 Github 链接
    */
-  GITHUB_URL: "https://github.com/EsunR",
+  GITHUB_URL: "https://github.com/fanzhefanzhe",
   /**
    * 背景图片地址
    */
