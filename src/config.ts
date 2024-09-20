@@ -14,7 +14,7 @@ const WEBSITE_ITEMS: WebsiteItem[] = [
     url: "https://home.zhizhe.fun",
     description: "收藏不迷路-有效期至2027",
     icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
-    color: "#0171CD",
+    color: "#EDA48A",
   },
   {
     sortId: 1,
@@ -22,15 +22,15 @@ const WEBSITE_ITEMS: WebsiteItem[] = [
     description: "国外节点访问",
     url: "https://chat.zhizhe.fun/zh",
     icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
-    color: "#cdca01",
+    color: "#FF7F50",
   },
   {
     sortId: 1,
     title: "智哲AI-国内中转",
     description: "国内节点访问",
-    url: "https://chat.zhizhe.fun/zh",
+    url: "https://gpt.zhizhe.fun/zh",
     icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
-    color: "#cdca01",
+    color: "#00C957",
   },
   // {
   //   sortId: 1,
@@ -47,7 +47,7 @@ const WEBSITE_ITEMS: WebsiteItem[] = [
     url: "https://blog.zhizhe.fun/",
     // icon: "https://esunr-image-bed.oss-cn-beijing.aliyuncs.com/logo.jpg",
     icon: "../../tmp/logo.jpg",
-    color: "#ad902d",
+    color: "#cdca01",
   },
 ];
 

@@ -75,7 +75,7 @@ onMounted(() => {
     :style="{ background: `url(${$config.BACKGROUND_IMG_URL})` }"
   >
     <div :class="['img-shadow', { 'img-shadow-show': bgLoaded }]"></div>
-    <div class="inner" style="cursor: pointer" @click="goToBlog">
+    <div class="inner nth-child(1)" style="cursor: pointer" @click="goToBlog">
       <img
         :class="['main-logo', { 'main-logo-top': touchable }]"
         :src="GLOBAL_CONFIG.LOGO_URL || LocalLogo"
@@ -87,18 +87,18 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="inner" style="cursor: pointer" @click="goToBlog">
-      <img
-        :class="['main-logo', { 'main-logo-top': touchable }]"
-        :src="GLOBAL_CONFIG.LOGO_URL || LocalLogo"
-      />
-      <div :class="['hello', { hello_bottom: touchable }]">
-        <div>{{ slogan }}</div>
-        <div class="hello_bottom_text">
-          国内访问 {{ $config.DOMESTIC_WISDOM_WISDOM }}
-        </div>
-      </div>
-    </div>
+    <!--    <div class="inner nth-child(2)" style="cursor: pointer" @click="goToBlog">-->
+    <!--      <img-->
+    <!--        :class="['main-logo', { 'main-logo-top': touchable }]"-->
+    <!--        :src="GLOBAL_CONFIG.LOGO_URL || LocalLogo"-->
+    <!--      />-->
+    <!--      <div :class="['hello', { hello_bottom: touchable }]">-->
+    <!--        <div>{{ slogan }}</div>-->
+    <!--        <div class="hello_bottom_text">-->
+    <!--          国内访问 {{ $config.DOMESTIC_WISDOM_WISDOM }}-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
   </div>
 </template>
 
@@ -134,6 +134,13 @@ onMounted(() => {
   }
   .inner {
     position: relative;
+    .inner:nth-child(1) {
+      top: 50px;
+    }
+
+    .inner:nth-child(2) {
+      top: 250px;
+    }
     .main-logo {
       height: 7rem;
       position: absolute;
@@ -144,30 +151,6 @@ onMounted(() => {
     .main-logo-top {
       top: -3.2rem;
     }
-    //.hello {
-    //  color: #ffffff;
-    //  width: 18.75rem;
-    //  text-align: center;
-    //  position: absolute;
-    //  transform: translate(-50%, -50%);
-    //  font-size: 1.5rem;
-    //  opacity: 0;
-    //  top: 100px;
-    //  transition: all 1s;
-    //}
-    //.hello_bottom {
-    //  opacity: 1;
-    //  top: 3.5rem;
-    //  .hello_bottom_text {
-    //    font-size: var(--regular-font-size);
-    //    margin-top: 0.5rem;
-    //    padding: 0.5rem;
-    //    border-top: 1px solid #fff;
-    //    background-color: #ffdd57; /* 使用明亮的背景颜色 */
-    //    color: #333333; /* 使用深色文本颜色 */
-    //    cursor: pointer;
-    //  }
-    //}
     .hello {
       color: #ffffff;
       width: 18.75rem;
