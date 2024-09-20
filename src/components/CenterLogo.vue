@@ -46,10 +46,16 @@ function loadBackground() {
 }
 
 /**
- * 前往我的博客
+ * 前往国内智哲AI
  */
 function goToBlog() {
-  window.location.href = GLOBAL_CONFIG.BLOG_URL;
+  window.location.href = GLOBAL_CONFIG.FOREIGN_WISDOM_WISDOM_URL;
+}
+/**
+ * 前往国内智哲AI
+ */
+function goToBlog2() {
+  window.location.href = GLOBAL_CONFIG.DOMESTIC_WISDOM_WISDOM_URL;
 }
 
 function randomSlogan() {
@@ -76,8 +82,21 @@ onMounted(() => {
       />
       <div :class="['hello', { hello_bottom: touchable }]">
         <div>{{ slogan }}</div>
-        <div class="hello_bottom_text">点击以访问 {{ $config.BLOG_NAME }}</div>
-<!--        <div class="hello_bottom_text">aaaaaaaaa</div>-->
+        <div class="hello_bottom_text">
+          点击以访问 {{ $config.FOREIGN_WISDOM_WISDOM }}
+        </div>
+      </div>
+    </div>
+    <div class="inner" style="cursor: pointer" @click="goToBlog">
+      <img
+        :class="['main-logo', { 'main-logo-top': touchable }]"
+        :src="GLOBAL_CONFIG.LOGO_URL || LocalLogo"
+      />
+      <div :class="['hello', { hello_bottom: touchable }]">
+        <div>{{ slogan }}</div>
+        <div class="hello_bottom_text">
+          国内访问 {{ $config.DOMESTIC_WISDOM_WISDOM }}
+        </div>
       </div>
     </div>
   </div>
@@ -172,7 +191,11 @@ onMounted(() => {
       margin-top: 0.5rem;
       padding: 1rem;
       border-radius: 8px;
-      background: linear-gradient(135deg, #f093fb, #f5576c); /* 使用渐变色作为背景 */
+      background: linear-gradient(
+        135deg,
+        #f093fb,
+        #f5576c
+      ); /* 使用渐变色作为背景 */
       color: #fff;
       cursor: pointer;
       display: inline-block;

@@ -64,7 +64,7 @@ function onDrawerClick(e: Event) {
         </div>
         <div class="drawer__footer">
           <sketch-outlined class="footer-icon" />
-          <a href="https://file.conbig.cn/" target="_blank">
+          <a href="https://blog.zhizhe.fun/" target="_blank">
             Driven by <b>Libertad's Blog</b>
           </a>
         </div>

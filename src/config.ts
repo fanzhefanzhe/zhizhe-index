@@ -18,33 +18,33 @@ const WEBSITE_ITEMS: WebsiteItem[] = [
   },
   {
     sortId: 1,
-    title: "智哲AI",
-    description: "域名有效期至2027",
+    title: "智哲AI-国外中转",
+    description: "国外节点访问",
     url: "https://chat.zhizhe.fun/zh",
     icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
     color: "#cdca01",
   },
   {
     sortId: 1,
-    title: "智哲AI-04-27",
-    description: "域名有效期至04-27,请关注https://home.zhizhe.fun",
+    title: "智哲AI-国内中转",
+    description: "国内节点访问",
     url: "https://chat.zhizhe.fun/zh",
     icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
     color: "#cdca01",
   },
-  {
-    sortId: 1,
-    title: "智哲AI-备用地址",
-    description: "建议收藏首页",
-    url: "http://zhizhe.v6.rocks/zh",
-    icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
-    color: "#52cb49",
-  },
+  // {
+  //   sortId: 1,
+  //   title: "智哲AI-备用地址",
+  //   description: "建议收藏首页",
+  //   url: "http://zhizhe.v6.rocks/zh",
+  //   icon: "https://at.alicdn.com/t/c/font_4480655_8sepqaak4ve.css",
+  //   color: "#52cb49",
+  // },
   {
     sortId: 1,
     title: "Libertad's Blog",
     description: "Libertad 的博客",
-    url: "https://file.conbig.cn/",
+    url: "https://blog.zhizhe.fun/",
     // icon: "https://esunr-image-bed.oss-cn-beijing.aliyuncs.com/logo.jpg",
     icon: "../../tmp/logo.jpg",
     color: "#ad902d",
@@ -55,11 +55,13 @@ const GLOBAL_CONFIG = {
   /**
    * 博客名称
    */
-  BLOG_NAME: "智哲AI",
+  FOREIGN_WISDOM_WISDOM: "智哲AI",
+  DOMESTIC_WISDOM_WISDOM: "智哲AI",
   /**
    * 个人博客链接
    */
-  BLOG_URL: "https://chat.zhizhe.fun/zh",
+  FOREIGN_WISDOM_WISDOM_URL: "https://chat.zhizhe.fun/zh",
+  DOMESTIC_WISDOM_WISDOM_URL: "https://gpt.zhizhe.fun/zh",
   /**
    * 指定中心 LOGO 图片地址
    */
